@@ -1,10 +1,28 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
-@import './navbar';
+// Font import
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+// Bootstrap import
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+// partial import
+@import './navbar';
+@import './home';
 
 body {
   margin: 0;
   .jahan {
     font-family: 'Courgette', cursive;
   }
+  @media (min-width: 768px) { 
+    .container, .container-md, .container-sm {
+      max-width: 90vw;
+    }
+  }
+
 }
+
+// @media only screen and (max-width: 500px) {
+//   .container {
+//     width: 90vw !important;
+//   }
+// }
