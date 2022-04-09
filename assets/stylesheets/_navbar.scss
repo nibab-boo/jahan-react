@@ -1,10 +1,4 @@
 .main-nav {
-  padding: 16px;
-  width: 100vw;
-  height: 100px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   background-color: #8E3C1D;
   .logo-box {
     padding: 4px;
@@ -16,6 +10,15 @@
     margin: 24px;
     font-size: 36px;
     font-weight: bold;
-    width: 40%;
+    width: 500px;
   }
+  .nav-link {
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 24px !important;
+  }
+}
+@media screen and (width: 400px) {
+  
 }
