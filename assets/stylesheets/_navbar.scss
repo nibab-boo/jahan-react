@@ -19,6 +19,16 @@
     padding: 0 24px !important;
   }
 }
-@media screen and (width: 400px) {
-  
+@media screen and (max-width: 774px) {
+  .main-nav>.container {
+    margin: 0 auto;
+    padding: 0 8px;
+    flex-wrap: nowrap;
+
+    p {
+      font-size: 20px;
+      margin: 0;
+    }
+  }
 }
+
