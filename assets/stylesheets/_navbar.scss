@@ -10,7 +10,7 @@
     margin: 24px;
     font-size: 36px;
     font-weight: bold;
-    width: 500px;
+    // width: 500px;
   }
   .nav-link {
     margin: auto;
@@ -23,12 +23,30 @@
   .main-nav>.container {
     margin: 0 auto;
     padding: 0 8px;
-    flex-wrap: nowrap;
-
     p {
       font-size: 20px;
-      margin: 0;
+      display: inline-block;
     }
   }
 }
 
+
+@media screen and (max-width: 440px) {
+  .main-nav > .container p {
+    width: 200px;
+    margin: 0;
+  }
+  
+  .main-nav .nav-link{
+    font-weight: normal;
+  }
+}
+@media screen and (max-width: 365px) {
+  .main-nav > .container {
+    justify-content: center;
+    p {
+      width: auto;
+      margin: auto;
+    }
+  }
+}

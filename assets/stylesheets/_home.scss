@@ -1,5 +1,3 @@
-
-
 .carousel-image {
   width: 100%;
   height: 60vh;
@@ -8,9 +6,6 @@
 }
 
 .photo-gallery {
-
-
-
   display: grid;
   width: 80vw;
   margin: auto;
@@ -37,9 +32,7 @@
   .div7 { grid-area: 3 / 4 / 5 / 5; }
 }
 
-@media screen and (max-width: 774px) {
-  
-
+@media screen and (max-width: 600px) {
   .photo-gallery {
     height: 700px;
     // grid-template-columns: repeat(3, 1fr);
@@ -53,5 +46,47 @@
     .div6 { grid-area: 3 / 2 / 5 / 3; }
     .div7 { grid-area: 4 / 3 / 7 / 4; }
     
+  }
+}
+
+.map {
+  .map-box {
+    display: flex;
+    justify-content: center;
+    .contact-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .info {
+        font-weight: bold;
+        color: #212529;
+        margin: 24px 0;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        display: inline-block;
+      }
+    }
+
+    .contact-links {
+
+      .contact-link {
+        cursor: pointer;
+        color: #CCA799;
+        font-size: 20px;
+        margin: 8px;
+        padding: 12px 24px;
+        background: #8E3C1D;
+
+        &:hover {
+          background: #791021;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
   }
 }

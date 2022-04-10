@@ -30,24 +30,25 @@ const Header = () => {
   // .then((postTitles) => console.log(postTitles));
 
   return (
-    <Navbar collapseOnSelect expand="lg" className='main-nav' variant="dark">
+    <Navbar sticky='top' collapseOnSelect expand="lg" className='main-nav' variant="dark">
       <Container>
       <Navbar.Brand href="#home" className='logo-box'>
         <img 
         src={logo}
-        className="d-inline-block align-top" width="80px" height="80px" alt="banner image" />   
+        className="d-inline-block align-top" width="60px" height="60px" alt="banner image" />   
       </Navbar.Brand>
-        <p className="me-auto jahan">
-        Jahan Indo Nepal Restaurant
-        </p>
+      <p className="me-auto jahan">
+      Jahan Indo Nepal Restaurant
+      </p>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className='ms-auto flex-row'>
+        <Nav className='ms-auto'>
           <Nav.Link href="#deets">Home</Nav.Link>
           <Nav.Link eventKey={2} href="#memes">
             Menu
           </Nav.Link>
           <Nav.Link href="#deets">Blogs</Nav.Link>
+          <Nav.Link href="#deets">Reservation</Nav.Link>
         </Nav>
       </Navbar.Collapse>
       </Container>
