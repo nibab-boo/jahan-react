@@ -14,7 +14,7 @@ const PhotoGallery = () => {
   return (
     <>
     {/* // <div className='container pt-3'> */}
-      <h2 className='my-5 text-center jahan'>Photo Gallery</h2>
+      <h2 className='jahan'>Photo Gallery</h2>
       <div className="photo-gallery">
         <div className="div1">
           <img src={twoCurrySet} alt="gallery_image" />

@@ -14,6 +14,9 @@
   grid-template-rows: repeat(5, 1fr);
   // grid-column-gap: 8px;
   // grid-row-gap: 8px;
+  &>div {
+    border: 2px solid rgb(204, 184, 184);
+  }
   img {
     width: 100%;
     height: 100%;
@@ -35,6 +38,8 @@
 @media screen and (max-width: 600px) {
   .photo-gallery {
     height: 700px;
+
+  
     // grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr);
@@ -50,6 +55,7 @@
 }
 
 .map {
+  margin-bottom: 32px;
   .map-box {
     display: flex;
     justify-content: center;
@@ -106,6 +112,36 @@
       .contact-links .contact-link {
         font-size: 16px;
         padding: 6px 12px;
+      }
+    }
+  }
+}
+
+.main-footer {
+  padding: 8px;
+  margin-top: 16px;
+  
+  h4, h5 {
+    text-align: center;
+  }
+
+  h4 {
+    width: 200px;
+    margin: 0 auto 8px;
+    padding: 8px;
+    border-bottom: 2px solid white;
+  }
+  
+  .footer-box {
+    ul {
+      list-style: none;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #CCA799;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }

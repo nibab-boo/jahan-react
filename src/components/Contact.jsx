@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div className='container'>
       <div className="map">
-        <h2 className='mt-5 text-center p-3 jahan'>Contact</h2>
+        <h2 className='jahan'>Contact</h2>
         <div className='map-box'>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5759.930797192907!2d139.84244896943716!3d35.88204478173476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60189742d1e4c48b%3A0x9f8da709e5067a31!2sJAHAN%20indian%20nepali%20restaurent!5e0!3m2!1sen!2sjp!4v1649570615111!5m2!1sen!2sjp"
           width="400"

@@ -8,6 +8,7 @@ import Header from './Header';
 import HomeCarousel from './HomeCarousel';
 import PhotoGallery from './PhotoGallery';
 import Contact from './Contact';
+import Footer from "./Footer";
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
           } >
           </Route>
         </Routes>
+        < Footer />
       </Router>
     </>
   );
