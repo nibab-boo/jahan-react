@@ -53,6 +53,7 @@
   .map-box {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     .contact-box {
       display: flex;
       flex-direction: column;
@@ -60,7 +61,8 @@
       .info {
         font-weight: bold;
         color: #212529;
-        margin: 24px 0;
+        margin: 16px 0;
+        font-size: 1.2em;
       }
       a {
         color: inherit;
@@ -86,6 +88,24 @@
         &:first-child {
           margin-left: 0;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) { 
+  .map .map-box {
+    
+    .contact-box {
+      margin-top: 24px;
+      margin: 0 !important;
+      .info {
+        font-size: 1em;
+        margin: 8px 0;
+      }
+      .contact-links .contact-link {
+        font-size: 16px;
+        padding: 6px 12px;
       }
     }
   }

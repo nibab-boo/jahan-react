@@ -10,13 +10,26 @@
 
 body {
   margin: 0;
-  .jahan {
+  .nav-jahan {
     font-family: 'Courgette', cursive;
+  }
+  .jahan {
+    box-sizing: border-box;
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    margin: 24px auto;
+    width: 40vw;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 8px;
   }
 }
 
-// @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 //   .container {
 //     width: 90vw !important;
 //   }
-// }
+  body .jahan {
+    width: 80vw
+  }
+}

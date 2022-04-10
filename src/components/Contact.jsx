@@ -21,8 +21,8 @@ const Contact = () => {
             </p>
             <p className='info telephone'><a href="tel:0489155644">TEL : 0489155644</a></p>
             <div className="contact-links">
-              <a className='contact-link'>Get direction</a>
-              <a className='contact-link'>Make a Call</a>
+              <a href="https://www.google.com/maps/place/JAHAN+indian+nepali+restaurent/@35.880672,139.844126,15z/data=!4m5!3m4!1s0x0:0x9f8da709e5067a31!8m2!3d35.880672!4d139.844126?hl=en" className='contact-link'>Get direction</a>
+              <a href="tel:0489155644" className='contact-link'>Make a Call</a>
             </div>
           </div>
         </div>

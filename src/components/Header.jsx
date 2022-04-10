@@ -37,7 +37,7 @@ const Header = () => {
         src={logo}
         className="d-inline-block align-top" width="60px" height="60px" alt="banner image" />   
       </Navbar.Brand>
-      <p className="me-auto jahan">
+      <p className="me-auto nav-jahan">
       Jahan Indo Nepal Restaurant
       </p>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
