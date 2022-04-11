@@ -6,7 +6,7 @@ import cheeseNan from "./../../assets/images/cheese_nan.jpeg"
 const Sides = () => {
   return (
     <>
-      <Tabs defaultActiveKey="Tandoori" id="uncontrolled-tab-example" className="mb-3">
+      <Tabs defaultActiveKey="Tandoori" id="menu-sub-tab" className="mb-3">
         <Tab eventKey="Tandoori" title="Tandoori">
           <div className='food-box'>
             <div className="food-card">

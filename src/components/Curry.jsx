@@ -7,7 +7,7 @@ import { Tabs, Tab } from 'react-bootstrap';
 const Curry = () => {
   return (
     <>
-      <Tabs defaultActiveKey="Chicken" id="uncontrolled-tab-example" className="mb-3">
+      <Tabs defaultActiveKey="Chicken" id="menu-sub-tab" className="mb-3">
         <Tab eventKey="Chicken" title="Chicken">
           <div className="food-box">
             <div className="food-card">

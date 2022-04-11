@@ -11,19 +11,16 @@ import Sets from './Sets';
 
 const Menu = () => {
   const demoStyle = {
-    minHeight: "60vh",
-    borderRight: "3px solid black",
-    // background: "pink",
-    padding: "16px"
+  
   }
   return (
-    <Container className='mt-5 py-5'>
+    <Container className='mt-5 py-5 position-relative'>
       <Tab.Container id="left-tabs-example" defaultActiveKey="Sets">
         <Row>
-          <Col  style={demoStyle} xs={12} sm={3} md={2}>
-            <Nav variant="pills" className="flex-column">
+          <Col  style={demoStyle} className="menu-col menu-page" xs={12} sm={3} md={2}>
+            <Nav variant="pills">
               <Nav.Item>
-                <Nav.Link className="" eventKey="Curry">Curry</Nav.Link>
+                <Nav.Link eventKey="Curry">Curry</Nav.Link>
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link eventKey="Nan">Nan</Nav.Link>
@@ -39,7 +36,7 @@ const Menu = () => {
               </Nav.Item>
             </Nav>
           </Col>
-          <Col style={demoStyle} xs={12} sm={9} md={10}>
+          <Col style={demoStyle} className="menu-col menu-content" xs={12} sm={9} md={10}>
             <Tab.Content>
               <Tab.Pane eventKey="Curry">
                 < Curry />
