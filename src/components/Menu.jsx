@@ -18,7 +18,7 @@ const Menu = () => {
   }
   return (
     <Container className='mt-5 py-5'>
-      <Tab.Container id="left-tabs-example" defaultActiveKey="Curry">
+      <Tab.Container id="left-tabs-example" defaultActiveKey="Sets">
         <Row>
           <Col  style={demoStyle} xs={12} sm={3} md={2}>
             <Nav variant="pills" className="flex-column">

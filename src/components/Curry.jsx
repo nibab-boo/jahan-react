@@ -1,6 +1,8 @@
 import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 
+// import cheeseNan from "./../../assets/images/cheese_nan.jpeg"
+
 
 const Curry = () => {
   return (
@@ -11,7 +13,7 @@ const Curry = () => {
             <div className="food-card">
               <div className="set-card">
                 <h4 className="food-name">Chicken Curry</h4>
-                <p className="food-info">Typical chicken curry.</p>
+                <p className="food-info">Combination of veggie brought together so you don't have to compromise.</p>
                 <p className="food-info price">$650</p>
               </div>
             </div>

@@ -1,22 +1,43 @@
+.nav-pills .nav-link {
+  cursor: pointer;
+}
+
 .food-box {
   display: flex;
   flex-wrap: wrap;
+  // justify-content: center;
   .food-card {
-    // background-color: beige;
-    width: 280px;
-    padding: 8px;
+    width: 260px;
     margin: 16px;
     box-shadow: 0 0 4px #CCA799,
-                4px 4px 8px #CCA799;
-    // border: 2px solid black;
+    4px 4px 8px #CCA799;
     h4 {
       font-size: 20px;
     }
-
-    .price {
-      margin-bottom: auto;
-      margin-left: auto;
-
+    img {
+      width: 100%;
+      height: 124px;;
+      object-fit: cover;
     }
+  }
+}
+.set-card {
+  padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 156px;
+  justify-content: space-between;
+  .food-info {
+    flex-grow: 1;
+  }
+  .price {
+    margin: 0 0 0 auto;
+    flex-grow: 0;
+  }
+  &.shadow {
+    box-shadow: 0 0 4px #CCA799,
+    4px 4px 8px #CCA799;
+    min-height: auto;
+    margin: 16px;
   }
 }

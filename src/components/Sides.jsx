@@ -1,21 +1,95 @@
 import React from 'react';
 import { Tabs, Tab } from 'react-bootstrap';
 
+import cheeseNan from "./../../assets/images/cheese_nan.jpeg"
 
 const Sides = () => {
   return (
     <>
       <Tabs defaultActiveKey="Tandoori" id="uncontrolled-tab-example" className="mb-3">
         <Tab eventKey="Tandoori" title="Tandoori">
-          Ab a iure aspernatur dolores nam aperiam atque quis fugit hic sapiente odit magnam, tenetur quaerat totam iusto nemo maxime, non excepturi harum itaque praesentium! Molestiae minus amet temporibus! Vero?
+          <div className='food-box'>
+            <div className="food-card">
+              <img src={cheeseNan} alt="cheese Nan" />
+              <div className="set-card">
+                <h4 className="food-name">Chicken Curry</h4>
+                <p className="food-info">Typical chicken curry.</p>
+                <p className="food-info price">$650</p>
+              </div>
+            </div>
+            <div className="food-card">
+              <img src={cheeseNan} alt="cheese Nan" />
+              <div className="set-card">
+                <h4 className="food-name">Chicken Curry</h4>
+                <p className="food-info">Typical chicken curry.</p>
+                <p className="food-info price">$650</p>
+              </div>
+            </div>
+            <div className="food-card">
+              <img src={cheeseNan} alt="cheese Nan" />
+              <div className="set-card">
+                <h4 className="food-name">Chicken Curry</h4>
+                <p className="food-info">Lorem, od doloremque nesciunt commodi numquam amet nihil. Typical chicken curry.</p>
+                <p className="food-info price">$650</p>
+              </div>
+            </div>
+          </div>
         </Tab>
         <Tab eventKey="Salad" title="Salad">
-          elit. Libero in vitae atque, odit suscipit voluptates autem necessitatibus et nostrum delectus rem qui modi laborum voluptatum nihil perferendis repellat blanditiis voluptatibus.
-          Ab a iure aspernatur dolores nam aperiam atque quis fugit hic sapiente odit magnam, tenetur quaerat totam iusto nemo maxime, non excepturi harum itaque praesentium! Molestiae minus amet temporibus! Vero?
+          <div className='food-box'>
+            <div className="food-card">
+              <img src={cheeseNan} alt="cheese Nan" />
+              <div className="set-card">
+                <h4 className="food-name">Chicken Curry</h4>
+                <p className="food-info">Typical chicken curry.</p>
+                <p className="food-info price">$650</p>
+              </div>
+            </div>
+            <div className="food-card">
+              <img src={cheeseNan} alt="cheese Nan" />
+              <div className="set-card">
+                <h4 className="food-name">Chicken Curry</h4>
+                <p className="food-info">Typical chicken curry.</p>
+                <p className="food-info price">$650</p>
+              </div>
+            </div>
+            <div className="food-card">
+              <img src={cheeseNan} alt="cheese Nan" />
+              <div className="set-card">
+                <h4 className="food-name">Chicken Curry</h4>
+                <p className="food-info">Lorem, od doloremque nesciunt commodi numquam amet nihil. Typical chicken curry.</p>
+                <p className="food-info price">$650</p>
+              </div>
+            </div>
+          </div>
         </Tab>
         <Tab eventKey="Appetizer" title="Appetizer">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero in vitae atque, odit suscipit voluptates autem necessitatibus et nostrum delectus rem qui modi laborum voluptatum nihil perferendis repellat blanditiis voluptatibus.
-          Ab a iure aspernatur dolores nam aperiam atque quis fugit hic sapiente odit magnam, tenetur quaerat totam iusto nemo maxime, non excepturi harum itaque praesentium! Molestiae minus amet temporibus! Vero?
+          <div className='food-box'>
+            <div className="food-card">
+              <img src={cheeseNan} alt="cheese Nan" />
+              <div className="set-card">
+                <h4 className="food-name">Chicken Curry</h4>
+                <p className="food-info">Typical chicken curry.</p>
+                <p className="food-info price">$650</p>
+              </div>
+            </div>
+            <div className="food-card">
+              <img src={cheeseNan} alt="cheese Nan" />
+              <div className="set-card">
+                <h4 className="food-name">Chicken Curry</h4>
+                <p className="food-info">Typical chicken curry.</p>
+                <p className="food-info price">$650</p>
+              </div>
+            </div>
+            <div className="food-card">
+              <img src={cheeseNan} alt="cheese Nan" />
+              <div className="set-card">
+                <h4 className="food-name">Chicken Curry</h4>
+                <p className="food-info">Lorem, od doloremque nesciunt commodi numquam amet nihil. Typical chicken curry.</p>
+                <p className="food-info price">$650</p>
+              </div>
+            </div>
+          </div>
         </Tab>
       </Tabs>
     </>
