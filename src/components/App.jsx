@@ -18,7 +18,7 @@ const App = () => {
   const apiTest = async () => {
     axios.get('http://localhost:5000/api').then(res => {
       const answers = res.data;
-      console.log(answers);
+      console.log(res);
     });
   };
   apiTest();
