@@ -1,6 +1,7 @@
 import { Carousel } from 'bootstrap';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import axios from "axios";
 
 
 // importing from components
@@ -11,7 +12,16 @@ import Contact from './Contact';
 import Footer from "./Footer";
 import Menu from "./Menu"
 
+
 const App = () => {
+
+  const apiTest = async () => {
+    axios.get('http://localhost:5000/api').then(res => {
+      const answers = res.data;
+      console.log(answers);
+    });
+  };
+  apiTest();
   return (
     <>
       <Router>

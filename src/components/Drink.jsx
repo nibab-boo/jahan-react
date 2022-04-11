@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Drink = () => {
+
   return (
     <div className="food-box drink">
       <div className="row w-100">
