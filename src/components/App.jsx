@@ -9,7 +9,7 @@ import HomeCarousel from './HomeCarousel';
 import PhotoGallery from './PhotoGallery';
 import Contact from './Contact';
 import Footer from "./Footer";
-
+import Menu from "./Menu"
 
 const App = () => {
   return (
@@ -27,9 +27,7 @@ const App = () => {
           </Route>
           <Route path="/menu" element= {
             <>
-              <div>
-                <h3>Hello, Everyone!!</h3>
-              </div>
+              < Menu />
               {/* < Menu /> */}
             </>
           }>

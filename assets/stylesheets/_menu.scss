@@ -1,0 +1,22 @@
+.food-box {
+  display: flex;
+  flex-wrap: wrap;
+  .food-card {
+    // background-color: beige;
+    width: 280px;
+    padding: 8px;
+    margin: 16px;
+    box-shadow: 0 0 4px #CCA799,
+                4px 4px 8px #CCA799;
+    // border: 2px solid black;
+    h4 {
+      font-size: 20px;
+    }
+
+    .price {
+      margin-bottom: auto;
+      margin-left: auto;
+
+    }
+  }
+}
