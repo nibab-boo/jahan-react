@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './../../assets/images/logo.png'
 // import axios from 'axios';
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 const Header = () => {
 
   // const cheerio = require('cheerio');
@@ -43,12 +43,12 @@ const Header = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className='ms-auto'>
-          <Nav.Link href="#deets">Home</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
+          <Link className='nav-link' to="/">Home</Link>
+          <Link className='nav-link' to="/menu">
             Menu
-          </Nav.Link>
-          <Nav.Link href="#deets">Blogs</Nav.Link>
-          <Nav.Link href="#deets">Reservation</Nav.Link>
+          </Link>
+          <Link className='nav-link' to="/blogs">Blogs</Link>
+          <Link className='nav-link' to="/reservation">Reservation</Link>
         </Nav>
       </Navbar.Collapse>
       </Container>

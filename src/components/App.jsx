@@ -23,7 +23,16 @@ const App = () => {
               < PhotoGallery />
               < Contact />
             </>
-          } >
+            } >
+          </Route>
+          <Route path="/menu" element= {
+            <>
+              <div>
+                <h3>Hello, Everyone!!</h3>
+              </div>
+              {/* < Menu /> */}
+            </>
+          }>
           </Route>
         </Routes>
         < Footer />
