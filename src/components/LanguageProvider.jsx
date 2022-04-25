@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useContext, createContext} from 'react';
 
-import { jsonEn } from './json_en';
-import { jsonJp } from './json_jp';
+import jsonEn from './json_en';
+import jsonJp from './json_jp';
 
 const LanguageContext = createContext();
 const LanguageUpdateContext = createContext();
