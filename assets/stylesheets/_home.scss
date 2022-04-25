@@ -125,12 +125,17 @@
     text-align: center;
   }
 
-  h4 {
-    width: 200px;
-    margin: 0 auto 16px;
-    padding: 16px 0px 0px;
-    border-bottom: 2px solid white;
+  h5 {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
 
+  h4 {
+    max-width: 240px;
+    margin: 16px auto;
+    background: #CCA799;
+    padding: 8px;
+    border-radius: 20px;
   }
   
   .footer-box {
@@ -145,5 +150,11 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main-footer .footer-box ul li{
+    border-bottom: 2px solid #CCA799;
   }
 }
