@@ -1,56 +1,46 @@
+/* eslint-disable import/no-useless-path-segments */
 import React from 'react';
-import logo from './../../assets/images/logo.png'
-// import axios from 'axios';
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import {
+  Navbar, Container, Nav, NavDropdown
+} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import logo from "./../../assets/images/logo.png";
+import { useLanUpdateContext, useLanContext } from './LanguageProvider';
+
 const Header = () => {
-
-  // const cheerio = require('cheerio');
-  
-  // const getPostTitles = async () => {
-  //   try {
-  //     const { data } = await axios.get(
-  //       'https://corsproxy.github.iohttps://photos.app.goo.gl/ji7CqqSXMhHFrKML7'
-  //     );
-  //     const $ = cheerio.load(data);
-  //     const postTitles = [];
-
-  //     $('div > p.title > a').each((_idx, el) => {
-  //       const postTitle = $(el).text()
-  //       postTitles.push(postTitle)
-  //     });
-  //     console.log(postTitles);
-  //     return postTitles;
-  //   } catch (error) {
-  //     throw error;
-  //   }
-  // };
-
-  // getPostTitles()
-  // .then((postTitles) => console.log(postTitles));
-
+  const toggleLan = useLanUpdateContext();
+  const json = useLanContext();
   return (
-    <Navbar sticky='top' collapseOnSelect expand="lg" className='main-nav' variant="dark">
+    <Navbar sticky="top" collapseOnSelect expand="lg" className="main-nav" variant="dark">
       <Container>
-      <Navbar.Brand href="#home" className='logo-box'>
-        <img 
-        src={logo}
-        className="d-inline-block align-top" width="60px" height="60px" alt="banner image" />   
-      </Navbar.Brand>
-      <p className="me-auto nav-jahan">
-      Jahan Indo Nepal Restaurant
-      </p>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className='ms-auto'>
-          <Link className='nav-link' to="/">Home</Link>
-          <Link className='nav-link' to="/menu">
-            Menu
-          </Link>
-          <Link className='nav-link' to="/blogs">Blogs</Link>
-          <Link className='nav-link' to="/reservation">Reservation</Link>
-        </Nav>
-      </Navbar.Collapse>
+        <Navbar.Brand href="#home" className="logo-box">
+          <img
+            src={logo}
+            className="d-inline-block align-top"
+            width="60px"
+            height="60px"
+            alt="apple"
+          />
+        </Navbar.Brand>
+        <p className="me-auto nav-jahan">
+          {json.name}
+        </p>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <Link className="nav-link" to="/">{json.navBar[0]}</Link>
+            <Link className="nav-link" to="/blog">{json.navBar[1]}</Link>
+            <Link className="nav-link" to="/menu">
+              {json.navBar[2]}
+            </Link>
+            <a className="nav-link" href="tel:0489155644">{json.navBar[3]}</a>
+            <NavDropdown title={`${json.navBar[4]}`} className="text-center" id="basic-nav-dropdown">
+              <NavDropdown.Item onClick={() => toggleLan(true)}>English</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item onClick={() => toggleLan(false)}>日本語</NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );
