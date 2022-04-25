@@ -6,7 +6,6 @@ import drinkMix from './../../assets/images/drink_mix.jpg'
 import garlicCheeseNan from './../../assets/images/garlic_cheese_nan.jpeg'
 import khuhuriRum from './../../assets/images/khukuri_rum.jpg'
 
-
 const HomeCarousel = () => {
   return (
     <>
