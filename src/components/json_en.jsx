@@ -78,49 +78,49 @@ const jsonEn = {
   },
 
   menu: {
-    tabList:  ["Curry", "Nan", "Side", "Set", "Drink"],
+    tabList: ["Curry", "Nan", "Side", "Set", "Drink"],
     curryList: [
       {
         name: "Chicken Curry",
         description: "Typical chicken curry.",
-        price: "$650"
+        price: "¥650"
       },
       {
         name: "Butter Chicken",
         description: "When we say butter chicken, we mean good, old, everyone's favourite.",
-        price: "$980"
+        price: "¥980"
       },
       {
         name: "Chicken Kurma",
         description: "Special curry with sweet flavour made with malai tikka and nuts.",
-        price: "$800"
+        price: "¥800"
       },
       {
         name: "Mutton Curry",
         description: "Curry with Lamb meat",
-        price: "$750"
+        price: "¥750"
       },
       {
         name: "Mutton Dopiyaja",
         description: "Mutton curry flavoured with garlic and Capsicum.",
-        price: "$800"
+        price: "¥800"
       },
       {
         name: "Keema Curry",
         description: "Curry Made of minced chicken and mutton",
-        price: "$750"
+        price: "¥750"
       },{
         name: "Keema Nas Curry",
         description: "Keema Curry with Nas topping",
-        price: "$750"
+        price: "¥750"
       },{
         name: "Mixed vegetable Curry",
         description: "Combination of veggie brought together so you don't have to compromise.",
-        price: "$750"
+        price: "¥750"
       },{
         name: "Panner Makani",
         description: "Butter chicken might be tempting, but Panner Makani has its own story.",
-        price: "$980"
+        price: "¥980"
       }
     ],
     nanList: [
@@ -128,17 +128,17 @@ const jsonEn = {
         name: "Cheese Nan",
         image: cheeseNan,
         description: "Circular nan with cheesey inside.",
-        price: "$420"
+        price: "¥420"
       },{
         name: "Garlic Cheese Nan",
         image: garlicCheeseNan,
         description: "Nan with cheese might be something. But, cheesey Nan with garlic is more than something.",
-        price: "$450"
+        price: "¥450"
       },{
         name: "Alu Paratha",
         image: aluParatha,
         description: "Paratha is one of the most eaten delicacy in India. This one in particular has a filling of mashed potato and Indian spices.",
-        price: "$400"
+        price: "¥400"
       }
     ],
     sideList: [
@@ -149,22 +149,22 @@ const jsonEn = {
             name: "Chicken Tikka",
             image: chickenTikka,
             description: "Boneless chicken grilled in tandori with Indian spices.",
-            price: "$560"
+            price: "¥560"
           },{
             name: "Tandori Chicken",
             image: tandooriChicken,
             description: "Place where we are from, we need atleast a bit of fight to savour our victory. Likewise for meat, we need a bit of bone to enjoy the juicy texture.",
-            price: "$420(1p)"
+            price: "¥420(1p)"
           },{
             name: "Tandoori Mix Gril",
             image: tandooriMix,
             description: "True heaven for meat lover.",
-            price: "$1350"
+            price: "¥1350"
           },{
             name: "Tandoori Prawn",
             image: tandooriPrawn,
             description: "Since we tandoor everything, why not AB. It is tandoor everything gone right.",
-            price: "$700"
+            price: "¥700"
           }
         ]
       },
@@ -175,12 +175,12 @@ const jsonEn = {
             name: "Panner Salad",
             image: pannerSalad,
             description: "Salad with indian inhouse cheese.",
-            price: "$500"
+            price: "¥500"
           },{
           name: "Tomato Salad",
           image: tomatoSalad,
           description: "Salad with Juicy tomato.",
-          price: "$500"
+          price: "¥500"
           }
         ]
       },
@@ -191,17 +191,17 @@ const jsonEn = {
             name: "Mo:Mo",
             image: moMo,
             description: "Nepalese style dumpling filled with juicy and spicy chicken and mutton.",
-            price: "$500"
+            price: "¥500"
           },{
             name: "Onion Ring",
             image: OnionRing,
             description: "Deep fried onion with special spiced batter.",
-            price: "$300"
+            price: "¥300"
           },{
             name: "Sunagimo Itame",
             image: sunagimoItame,
             description: "Gizzard fry that does wonder.",
-            price: "$440"
+            price: "¥440"
           }
         ]
       }
@@ -214,27 +214,27 @@ const jsonEn = {
           {
             name: "A Set",
             description: "Salad, dal curry, nan/rice and softdrink",
-            price: "$680"
+            price: "¥680"
           },{
             name: "B Set",
             description: "Salad, a choice curry, nan/rice and softdrink",
-            price: "$780"
+            price: "¥780"
           },{
             name: "C Set",
             description: "Salad with chicken Tikka(2p), choice curry, nan/rice and softdrink",
-            price: "$890"
+            price: "¥890"
           },{
             name: "D Set",
             description: "Salad with a Seekh-Kabab and malai Tikka, dal curry, nan/rice and softdrink",
-            price: "$1150"
+            price: "¥1150"
           },{
             name: "Jahan Lunch Set",
             description: "Salad with malai Tikka(2p), choice curry, nan/rice and softdrink",
-            price: "$920"
+            price: "¥920"
           },{
             name: "2 curry Set",
             description: "Salad with chicken tikka and Tandori Prawn, today's special curry and choice curry, nan/rice and softdrink",
-            price: "$980"
+            price: "¥980"
           }
         ]
       }, {
@@ -244,31 +244,31 @@ const jsonEn = {
           {
             name: "Dinner Set",
             description: "Salad",
-            price: "$1150"
+            price: "¥1150"
           },{
             name: "Veg Thali",
             description: "Salad,dal and sag panner curry, nan ,and rice and softdrink",
-            price: "$1250"
+            price: "¥1250"
           },{
             name: "Chicken Thali",
             description: "Salad, choice curry and chicken curry, nan and rice and softdrink",
-            price: "$1450"
+            price: "¥1450"
           },{
             name: "Jahan Set",
             description: "Salad with tandori chicken and Seekh-Kabab, choice curry, nan/rice and softdrink",
-            price: "$1600"
+            price: "¥1600"
           },{
             name: "Jodi Set",
             description: "Salad with 2(malai-tikka, Seekh-Kabab and tandori Prawn),2 choice curry, nan/rice/cheese-nan(1) and softdrink",
-            price: "$3500"
+            price: "¥3500"
           },{
             name: "Beer Set",
             description: "Beer with Tandori Chicken and papad",
-            price: "$730"
+            price: "¥730"
           },{
             name: "Wine Set",
             description: "Glass of wine with chicken tikka, malai-tikka and Seekh-Kabab and papad",
-            price: "$750"
+            price: "¥750"
           }
         ]
       }
@@ -279,16 +279,16 @@ const jsonEn = {
         items: [
           {
             name: "Nepal Ice (Nepal)",
-            price: "$520"
+            price: "¥520"
           },{
             name: "Everest (Nepal)",
-            price: "$550"
+            price: "¥550"
           },{
             name: "KingFisher (India)",
-            price: "$550"
+            price: "¥550"
           },{
             name: "Asahi Draft Beer (Japan)",
-            price: "$399"
+            price: "¥399"
           }
         ]
       },
@@ -297,16 +297,16 @@ const jsonEn = {
         items: [
           {
             name: "Lassi",
-            price: "$300"
+            price: "¥300"
           },{
             name: "Mango Lassi",
-            price: "$300"
+            price: "¥300"
           },{
             name: "Ice Chai",
-            price: "$300"
+            price: "¥300"
           },{
             name: "Hot Chai",
-            price: "$300"
+            price: "¥300"
           }
         ]
       },{
@@ -314,16 +314,16 @@ const jsonEn = {
         items: [
           {
             name: "8848 (Vodka - From Nepal)",
-            price: "$450"
+            price: "¥450"
           },{
             name: "Khukhuri Rum (Rum - From Nepal)",
-            price: "$450"
+            price: "¥450"
           },{
             name: "Old Durbar (Whiskey - From Nepal)",
-            price: "$450"
+            price: "¥450"
           }, {
             name: "Mc Dowells' (Rum - From India)",
-            price: "$450"
+            price: "¥450"
           }
         ]
       }
