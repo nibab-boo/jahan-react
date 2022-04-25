@@ -34,7 +34,6 @@ module.exports = {
               presets: ['@babel/preset-env', '@babel/preset-react'],
             }
           }
-        
         ],
       },
       {
@@ -53,13 +52,6 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: [ '.js', '.jsx' ],
-    fallback: {
-      "os-browserify/browser": false,
-      "browserify-zlib": false,
-      "stream-browserify": false,
-      "https-browserify": false,
-      "-browserify": false
-    }
+    extensions: [ '.js', '.jsx' ]
   }
 };
