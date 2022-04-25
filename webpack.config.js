@@ -54,28 +54,12 @@ module.exports = {
   },
   resolve: {
     extensions: [ '.js', '.jsx' ],
-    fallback: { 
-    	"crypto": require.resolve("crypto-browserify"), 
-      "stream": require.resolve("stream-browserify"), 
-      "assert": require.resolve("assert"), 
-      "http": require.resolve("stream-http"), 
-      "https": require.resolve("https-browserify"), 
-      "os": require.resolve("os-browserify"), 
-      "url": require.resolve("url"),
-      "path": require.resolve("path-browserify"),
-      "util": require.resolve("util"),
-      "stream-http": false,
+    fallback: {
       "os-browserify/browser": false,
       "browserify-zlib": false,
       "stream-browserify": false,
       "https-browserify": false,
-      "-browserify": false,
-      "zlib": false,
-      "net": false,
-      "tls": false,
-      "fs": false,
-      "child_process": require.resolve("process")
-
+      "-browserify": false
     }
   }
 };
