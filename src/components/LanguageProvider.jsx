@@ -8,10 +8,10 @@ const LanguageUpdateContext = createContext();
 
 export const useLanContext = () => {
   return useContext(LanguageContext);
-}
+};
 export const useLanUpdateContext = () => {
   return useContext(LanguageUpdateContext);
-}
+};
 
 const LanguageProvider = ({children}) => {
   const [enLan, setEnLan] = useState();
