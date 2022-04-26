@@ -18,6 +18,7 @@ function App() {
   useEffect(() => {
     // fetch('https://www.dynamism.com/blogs', {
     fetch('http://localhost:3000/api/v1/blogs', {
+      referrerPolicy: 'origin-when-cross-origin',
       headers: {
         'Content-Type': 'application/json',
         'X-User-Email': "omegaegg12@gmail.com",
