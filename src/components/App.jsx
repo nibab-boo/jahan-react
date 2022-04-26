@@ -14,7 +14,7 @@ import Blog from "./Blog";
 import { LanguageProvider } from './LanguageProvider';
 
 function App() {
-  const [blogs, setBlogs] = useState();
+  const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     // fetch('https://www.dynamism.com/blogs', {
     fetch('http://localhost:3000/api/v1/blogs', {
@@ -28,7 +28,7 @@ function App() {
       .then((data) => {
         console.log(data);
         setBlogs(data);
-      });
+      }).catch((error) => console.log(error));
   }, []);
 
   return (
