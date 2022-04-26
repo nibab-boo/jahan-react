@@ -3,6 +3,7 @@ import React from 'react';
 const Blog = ({ blogs }) => {
   return (
     <div className="container mt-5 p-5" style={{ minHeight: "60vh" }}>
+      {/* <h2 className="jahan">Blogs</h2> */}
       <div className="row row-cols-md-2 row-cols-1 justify-content-between">
         { blogs.length === 0 ? (
           <>
@@ -13,7 +14,7 @@ const Blog = ({ blogs }) => {
           blogs.map((blog, index) => (
             <div className="col">
 
-              <div className={`blog-card ${index / 2 !== 0 ? "alt" : ""}`} key={index}>
+              <div className={`blog-card ${index / 2 !== 0 ? "alt" : ""}`} key={blog.title}>
                 <div className="meta">
                   <div className="photo" style={{ backgroundImage: `url(${blog.image_url})` }} />
                 </div>
