@@ -2,6 +2,7 @@
   "name": "jahan",
   "version": "1.0.0",
   "description": "React Restaurant App",
+  "homepage": "https://nibab-boo.github.io/jahan-react",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
