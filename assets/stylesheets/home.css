@@ -1,0 +1,159 @@
+.carousel-image {
+  width: 100%;
+  height: 60vh;
+  display: block;
+  object-fit: cover;
+}
+.photo-gallery {
+  display: grid;
+  width: 80vw;
+  margin: auto;
+  height: 600px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.photo-gallery > div {
+  border: 2px solid #ccb8b8;
+}
+.photo-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-gallery .div1 {
+  grid-area: 0.1111111111;
+}
+.photo-gallery .div2 {
+  grid-area: 0.1666666667;
+}
+.photo-gallery .div3 {
+  grid-area: 0.3;
+}
+.photo-gallery .div4 {
+  grid-area: 0.075;
+}
+.photo-gallery .div5 {
+  grid-area: 0.0055555556;
+  display: flex;
+  justify-content: center;
+}
+.photo-gallery .div6 {
+  grid-area: 0.0222222222;
+}
+.photo-gallery .div7 {
+  grid-area: 0.03;
+}
+@media screen and (max-width: 600px) {
+  .photo-gallery {
+    height: 700px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+ }
+  .photo-gallery .div1 {
+    grid-area: 0.1111111111;
+ }
+  .photo-gallery .div2 {
+    grid-area: 0.21875;
+ }
+  .photo-gallery .div3 {
+    grid-area: 0.3;
+ }
+  .photo-gallery .div4 {
+    grid-area: 0.2380952381;
+ }
+  .photo-gallery .div5 {
+    grid-area: 0.0208333333;
+ }
+  .photo-gallery .div6 {
+    grid-area: 0.1;
+ }
+  .photo-gallery .div7 {
+    grid-area: 0.0476190476;
+ }
+}
+.map {
+  margin-bottom: 32px;
+}
+.map .map-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.map .map-box .contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.map .map-box .contact-box .info {
+  font-weight: bold;
+  color: #212529;
+  margin: 16px 0;
+  font-size: 1.2em;
+}
+.map .map-box .contact-box a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+.map .map-box .contact-links .contact-link {
+  cursor: pointer;
+  color: #cca799;
+  font-size: 20px;
+  margin: 8px;
+  padding: 12px 24px;
+  background: #8e3c1d;
+}
+.map .map-box .contact-links .contact-link:hover {
+  background: #791021;
+}
+.map .map-box .contact-links .contact-link:first-child {
+  margin-left: 0;
+}
+@media screen and (max-width: 530px) {
+  .map .map-box .contact-box {
+    margin-top: 24px;
+    margin: 0 !important;
+ }
+  .map .map-box .contact-box .info {
+    font-size: 1em;
+    margin: 8px 0;
+ }
+  .map .map-box .contact-box .contact-links .contact-link {
+    font-size: 16px;
+    padding: 6px 12px;
+ }
+}
+.main-footer {
+  padding: 8px;
+  margin-top: 16px;
+}
+.main-footer h4, .main-footer h5 {
+  text-align: center;
+}
+.main-footer h5 {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.main-footer h4 {
+  max-width: 240px;
+  margin: 16px auto;
+  background: #cca799;
+  padding: 8px;
+  border-radius: 20px;
+}
+.main-footer .footer-box ul {
+  list-style: none;
+}
+.main-footer .footer-box ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #cca799;
+}
+.main-footer .footer-box ul a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 420px) {
+  .main-footer .footer-box ul li {
+    border-bottom: 2px solid #cca799;
+ }
+}
