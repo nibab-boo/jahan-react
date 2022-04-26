@@ -28,7 +28,7 @@ function App() {
       .then((data) => {
         console.log(data);
         setBlogs(data);
-      }).catch((error) => console.log(error));
+      });
   }, []);
 
   return (
